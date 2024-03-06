@@ -7,13 +7,6 @@
     align-items: center;
   }
 
-.form-group {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-    margin-left: 10px;
-    border-radius: 8px;
-}
 
 .detail-item {
     padding: 8px 12px;
@@ -32,7 +25,8 @@
   }
   
   .container > * {
-    margin-top: 20px; /* Adicione um espaço entre os elementos */
+    width: 100%;
+    margin-top: 5px;
   }
   
   .container table {
@@ -86,4 +80,12 @@
   button:hover {
     opacity: 0.8;
   }
-  
+  .btn {
+    background-color: #00B5BD;
+    color: rgb(250, 250, 250);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 5px;
+    width: 100%;
+  }

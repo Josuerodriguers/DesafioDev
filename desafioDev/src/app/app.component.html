@@ -1,0 +1,8 @@
+<nav class="navbar">
+  <div *ngIf="showLogoutButton" class="user-info ">
+  <button (click)="logoutNavbar()" class="logout-button">Logout</button>
+  
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  

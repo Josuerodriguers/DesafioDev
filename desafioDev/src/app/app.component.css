@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.user-info {
+  display: flex;
+}
+
+.logout-button {
+  margin-left: auto;
+}
+
+button {
+    background-color: #00B5BD;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .logout-button {
+    align-self: flex-end;
+    width: 100;
+    margin-left: auto;
+    
+  }
+
+  
+
+  

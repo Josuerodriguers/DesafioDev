@@ -8,6 +8,17 @@
   }
 
 
+  .containerTitulo {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+
 .detail-item {
     padding: 8px 12px;
     border: 1px solid #dee2e6;
@@ -45,13 +56,13 @@
   
   .table th,
   .table td {
-    border: 1px solid #ddd;
+    border: 2px solid #2BBDC4;
     padding: 8px;
     text-align: left;
   }
   
   .table th {
-    background-color: #f2f2f2;
+    background-color: #2BBDC4;
   }
   
   .details-container {
@@ -88,4 +99,21 @@
     border-radius: 8px;
     padding: 8px 5px;
     width: 100%;
+  }
+
+  .iconEyes {
+    border-radius: 5px;
+    background-color: #00B5BD;
+  }
+
+.table td {
+  position: relative;
+}
+
+
+  .center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }

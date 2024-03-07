@@ -1,5 +1,4 @@
 <nav class="navbar">
-  <button (click)="logoutNavbar()" class="logout-button">Logout</button>
-  </nav>
-  <router-outlet></router-outlet>
-  
+  <button *ngIf="showLogoutButton" (click)="logoutNavbar()" class="logout-button">Logout</button>
+</nav>
+<router-outlet></router-outlet>

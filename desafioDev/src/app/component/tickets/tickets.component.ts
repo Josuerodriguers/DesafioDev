@@ -32,6 +32,7 @@ export class TicketsComponent implements OnInit {
     'Service Desk',
     'Twitter',
   ];
+  showLogoutButton: boolean = false;
 
   get itemsPerPage(): number {
     return this.filter.itemsPerPage;
@@ -94,7 +95,9 @@ export class TicketsComponent implements OnInit {
     if (sessionToken) {
       this.loadUniqueUsers(sessionToken);
     }
+    this.showLogoutButton = true;
   }
+
 
   resetFilters(): void {
     this.filter = { ...INITIAL_FILTER_STATUS };
@@ -204,7 +207,4 @@ export class TicketsComponent implements OnInit {
       });
     });
   }
-  
-  
-  
 }

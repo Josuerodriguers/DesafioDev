@@ -55,8 +55,8 @@ body {
   .input-prefix {
     background-color: #eeeeee;
     color: #777777;
-    padding: 6px 13px;
-    border-right: 1px solid #ccc;
+    padding: 10px 13px;
+    border-right: 2px solid #ccc;
   }
 
   .form-control {
@@ -76,7 +76,6 @@ body {
     width: 100%;
     text-align: end;
     padding: 10px;
-    background-color: #f8f8f8;
   }
   
   .footer {

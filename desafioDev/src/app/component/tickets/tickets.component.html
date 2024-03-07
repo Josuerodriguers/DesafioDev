@@ -147,29 +147,7 @@
                     </tr>
                     <tr *ngIf="ticket.showDetails">
                       <td colspan="8">
-                          <div class="row">
-                              <div class="col-md-3">
-                                  <strong>Situação:</strong> {{ ticket.situacao }} <br/>
-                                  <strong>Prioridade:</strong> {{ ticket.idprioridade }} <br/>
-                                  <strong>Usuário:</strong> {{ ticket.Usuario }} <br/>
-                                  <strong>Origem do Atendimento:</strong> {{ ticket.OrigemAtendimento }} <br/>
-                              </div>
-                              <div class="col-md-3">
-                                  <strong>Data da Solicitação:</strong> {{ ticket.data_solicitacao | date : "dd/MM/yyyy HH:mm:ss" }} <br/>
-                                  <strong>Data Limite:</strong> {{ ticket.data_limit }} <br/>
-                                  <strong>Nota do Atendimento:</strong> {{ ticket.nota }} <br/>
-                                  <strong>Atividade:</strong> {{ ticket.Atividade }} <br/>
-                              </div>
-                              <div class="col-md-3">
-                                  <strong>Descrição:</strong> {{ ticket.Descricao }} <br/>
-                                  <strong>Tipo de Demanda:</strong> {{ ticket.tipoDemanda }} <br/>
-                                  <strong>Serviço:</strong> {{ ticket.Servico }} <br/>
-                                  <strong>Grupo Atual:</strong> {{ ticket.GrupoAtual }} <br/>
-                              </div>
-                              <div class="col-md-3">
-                                  <strong>Contrato:</strong> {{ ticket.Contrato }} <br/>
-                              </div>
-                          </div>
+
                       </td>
                   </tr>
                 </ng-container>

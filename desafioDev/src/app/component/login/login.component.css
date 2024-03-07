@@ -108,3 +108,26 @@ body {
     opacity: 0.8;
   }
 
+
+  .github-link {
+    margin-right: 5px;
+  }
+  
+  .github-icon {
+    width: 25px;
+  }
+
+  .author {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+  }
+  
+  .author span {
+    margin-right: 5px;
+  }
+  
+  .author .github-icon {
+    vertical-align: middle;
+  }

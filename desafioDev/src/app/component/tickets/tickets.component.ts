@@ -3,6 +3,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AuthService } from '../../services/authService';
 import { FilterStatus, INITIAL_FILTER_STATUS, selectedFields } from './../../types';
 import { ITickets } from '../../interface/ITickets';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalContentComponent } from '../../component/tickets/ModalContentComponent';
+
 
 @Component({
   selector: 'app-tickets',
@@ -88,7 +91,9 @@ export class TicketsComponent implements OnInit {
 
   url = 'https://gsm-hmg.centralitcloud.com.br/citsmart/services/data/query';
 
-  constructor(private http: HttpClient, private authService: AuthService) {}
+  constructor(private http: HttpClient, private authService: AuthService,
+    private modalService: NgbModal
+    ) {}
 
   ngOnInit() {
     const sessionToken = this.authService.getSessionToken();
@@ -98,9 +103,16 @@ export class TicketsComponent implements OnInit {
     this.showLogoutButton = true;
   }
 
+  openModal(ticket: ITickets) {
+    const modalRef = this.modalService.open(ModalContentComponent, { size: 'lg' });
+    modalRef.componentInstance.ticket = ticket;
+  }
+  
+
 
   resetFilters(): void {
     this.filter = { ...INITIAL_FILTER_STATUS };
+    this.filterUsuario = '';
     this.filteredTickets = [];
   }
 
@@ -109,8 +121,9 @@ export class TicketsComponent implements OnInit {
   }
 
   toggleDetails(ticket: ITickets): void {
-    ticket.showDetails = !ticket.showDetails;
+    this.openModal(ticket);
   }
+  
 
   sortTable(property: string): void {
     this.isDesc = !this.isDesc;

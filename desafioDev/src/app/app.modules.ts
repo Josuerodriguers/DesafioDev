@@ -10,12 +10,14 @@ import { LoginComponent } from './component/login/login.component';
 import { AuthService } from './services/authService';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TicketsComponent } from './component/tickets/tickets.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     TicketsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { TicketsComponent } from './component/tickets/tickets.component';
     NgbModule,
     ReactiveFormsModule,
     NgxPaginationModule,
+    CommonModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

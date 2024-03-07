@@ -23,8 +23,8 @@ Antes de iniciar, certifique-se de que o [Node.js](https://nodejs.org/en/) e o [
    ```sh
    git clone https://github.com/Josuerodriguers/DesafioDev
    ```
-2. **Instale as Dependencias do Projeto**
-3. **entre na pasta DesafioDev e depois**
+2. **entre na pasta DesafioDev e depois**
+3. **Instale as Dependencias do Projeto**
     ```sh
     npm install
     ```

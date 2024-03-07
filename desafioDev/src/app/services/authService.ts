@@ -83,7 +83,7 @@ export class AuthService {
   }
 
   getSessionToken(): string {
-    console.log('sessionToken:', this.sessionToken);
+    // console.log('sessionToken:', this.sessionToken);
     return this.sessionToken;
   }
 }
